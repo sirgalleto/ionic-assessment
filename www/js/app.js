@@ -1,17 +1,12 @@
 (function(){
 
     angular
-    .module('CAssessment',['ionic'] )
+    .module('CAssessment',['ionic', 'CAssessment.user'] )
     .config(config)
     .run(run);
 
     function config($stateProvider, $urlRouterProvider) {
-        $stateProvider
 
-        .state('home', {
-            url: '/',
-            templateUrl: 'templates/home.html'
-        });
 
         // if none of the above states are matched, use this as the fallback
         $urlRouterProvider.otherwise('/');
