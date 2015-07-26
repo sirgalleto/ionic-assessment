@@ -12,6 +12,11 @@
                 url: '/',
                 controller: 'MenuController',
                 templateUrl: 'templates/home.html'
-                });
+                })
+            .state('test', {
+                url: 'test/:id',
+                controller: 'TestController',
+                templateUrl: 'templates/test.html'
+            });
     }
 })();
