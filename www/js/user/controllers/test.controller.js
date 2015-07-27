@@ -15,7 +15,8 @@
                 title: "What's your name?",
                 inputType: 'text',
                 inputPlaceholder: 'Name',
-                okType: 'button-balanced'
+                okType: 'button-balanced',
+                cancelType: 'button-clear button-balanced'
             }).then(function(res) {
                 if(res){
                     $scope.user = res;
