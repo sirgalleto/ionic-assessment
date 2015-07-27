@@ -1,5 +1,24 @@
-<ion-view view-title="{{test}}">
+<ion-view view-title="{{test.name}}">
+    <ion-nav-buttons side="right">
+        <button menu-toggle="right" class="button button-icon icon nav-assertive">
+        <i class="ion-checkmark-round"></i>
+        </button>
+    </ion-nav-buttons>
     <ion-content>
-        <h1>Test</h1>
+        <div class="list">
+
+            <div ng-repeat="question in test.questions">
+                <div class="item item-divider">
+                    {{$index + 1}}. {{question.title}}
+                </div>
+                    <ion-radio ng-repeat="(key, value) in question.answers"
+                    name="'{{key + value}}'"
+                    ng-value="'{{key}}'"
+                    ng-model="question.result">
+                    {{key}}. {{value}}
+                    </ion-radio>
+            </div>
+
+        </div>
     </ion-content>
 </ion-view>
