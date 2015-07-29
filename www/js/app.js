@@ -1,7 +1,7 @@
 (function(){
 
     angular
-    .module('CAssessment',['ionic', 'CAssessment.user'] )
+    .module('CAssessment',['ionic', 'ngUnderscore', 'CAssessment.user'] )
     .config(config)
     .run(run);
 

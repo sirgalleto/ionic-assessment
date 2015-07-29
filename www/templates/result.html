@@ -1,0 +1,10 @@
+<div style="text-align: center;" ng-init="stars = (result/total) * 5">
+    <h2>
+        {{result}}/<small>{{total}}</small>
+    </h2>
+    <div ng-repeat="i in getTimes(5) track by $index" style="display: inline;">
+        <i class="ion-star" ng-if="stars - $index > 1"></i>
+        <i class="ion-ios-star-half" ng-if="stars - $index == 0.5"></i>
+        <i class="ion-ios-star-outline" ng-if="stars - $index < 0.5"></i>
+    </div>
+</div>

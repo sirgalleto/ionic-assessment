@@ -5,10 +5,35 @@
     .module('CAssessment.user')
     .controller('TestController', TestController);
 
-    function TestController($scope, $state, tests, $ionicPopup) {
+    function TestController($scope, $state, tests, $ionicPopup, _) {
 
         $scope.test = tests[$state.params.id];
+        $scope.resulting = resulting;
+        $scope.getTimes = function(n){
+            return new Array(n);
+        };
+
         init();
+
+        function resulting(questions) {
+            $scope.total = tests[$state.params.id].questions.length;
+            $scope.result = 0;
+
+            _.each(questions,function(question){
+                if(question.correct === question.result){
+                    $scope.result++;
+                }
+            });
+
+            $ionicPopup.alert({
+                title: $scope.user,
+                templateUrl: 'templates/result.html',
+                scope: $scope,
+                okType: 'button-balanced'
+            }).then(function(){
+                $state.go('home');
+            });
+        }
 
         function init() {
             $ionicPopup.prompt({
