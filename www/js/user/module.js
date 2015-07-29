@@ -16,7 +16,8 @@
             .state('test', {
                 url: 'test/:id',
                 controller: 'TestController',
-                templateUrl: 'templates/test.html'
+                templateUrl: 'templates/test.html',
+                cache: false
             });
     }
 })();
