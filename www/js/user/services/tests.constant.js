@@ -185,17 +185,19 @@
 
                 {
                     title: 'Select the picture that shows. Cut the paper',
-                    a: {
-                        description: 'Imagen de alguien escribiendo'
-                    },
-                    b: {
-                        description: 'Imagen de alguien coloreando'
-                    },
-                    c: {
-                        description: 'Imagen de alguien cortando papel'
-                    },
-                    d: {
-                        description: 'Imagen de alguien pintando'
+                    answers:{
+                        a: {
+                            description: 'Imagen de alguien escribiendo'
+                        },
+                        b: {
+                            description: 'Imagen de alguien coloreando'
+                        },
+                        c: {
+                            description: 'Imagen de alguien cortando papel'
+                        },
+                        d: {
+                            description: 'Imagen de alguien pintando'
+                        }
                     }
                 }
             ]

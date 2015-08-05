@@ -19,8 +19,9 @@
             $scope.total = tests[$state.params.id].questions.length;
             $scope.result = 0;
 
-            _.each(questions,function(question){
-                if(question.correct === question.result){
+            _.each(questions,function(question, index){
+                if(question.result && question.correct === question.result){
+                    console.log(index);
                     $scope.result++;
                 }
             });
