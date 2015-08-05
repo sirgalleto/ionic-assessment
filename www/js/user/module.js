@@ -11,7 +11,8 @@
             .state('home', {
                 url: '/',
                 controller: 'MenuController',
-                templateUrl: 'templates/home.html'
+                templateUrl: 'templates/home.html',
+                cache: false
                 })
             .state('test', {
                 url: 'test/:id',
