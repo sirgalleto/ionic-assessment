@@ -6,6 +6,7 @@
             name: 'First Assessment',
             questions:[
                 {
+                    instruction: 'This is a instruction',
                     title:'This is my dog Ali. It ___ small ears and a black nose',
                     //imagen de un perro
                     answers: {

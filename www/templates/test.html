@@ -10,6 +10,9 @@
 
             <div ng-repeat="question in test.questions"
             ng-init="index = $index;">
+            <div class="item item-divider" ng-show="question.instruction">
+                {{question.instruction}}
+            </div>
                 <div class="item item-divider">
                     {{$index + 1}}. {{question.title}}
                 </div>
