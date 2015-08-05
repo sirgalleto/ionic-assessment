@@ -7,7 +7,7 @@
 
     function TestController($scope, $state, tests, $ionicPopup, _) {
 
-        $scope.test = tests[$state.params.id];
+        $scope.test = angular.copy(tests[$state.params.id]);
         $scope.resulting = resulting;
         $scope.getTimes = function(n){
             return new Array(n);
