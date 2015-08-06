@@ -9,6 +9,7 @@
                     instruction: 'This is a instruction',
                     title:'This is my dog Ali. It ___ small ears and a black nose',
                     //imagen de un perro
+                    image: 'test.png',
                     answers: {
                         a: {
                             description: 'am'
@@ -31,7 +32,8 @@
                     //imagen de un libro sobre la mesa
                     answers: {
                         a: {
-                            description: 'under'
+                            description: 'under',
+                            image: 'test.png'
                         },
                         b: {
                             description: 'on'

@@ -1,1 +1,20 @@
 /* Empty. Add your own CSS if you like */
+.image{
+    text-align: center;
+}
+
+.image img{
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+}
+
+.answer-image{
+    text-align: center;
+}
+
+.answer-image img{
+    width: 70%;
+    max-width: 250px;
+    height: auto;
+}

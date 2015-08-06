@@ -16,11 +16,17 @@
                 <div class="item item-divider">
                     {{$index + 1}}. {{question.title}}
                 </div>
+                <div class="item image" ng-if="question.image">
+                    <img ng-src="{{question.image | testImage: test.name}}"/>
+                </div>
                     <ion-radio ng-repeat="(key, value) in question.answers"
                     name="'{{index + key }}'"
                     ng-value="'{{key}}'"
                     ng-model="question.result">
                     {{key}}. {{value.description}}
+                    <div class="item answer-image" ng-if="value.image">
+                        <img ng-src="{{value.image | testImage: test.name}}"/>
+                    </div>
                     </ion-radio>
             </div>
 
