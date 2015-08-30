@@ -1,5 +1,8 @@
 # ionic-assessment
 App to present assessments created in a constant archive
 
-#Run
+## Install
+`bower install`
+
+## Run
 `ionic serve`
