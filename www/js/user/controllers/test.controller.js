@@ -5,7 +5,7 @@
     .module('CAssessment.user')
     .controller('TestController', TestController);
 
-    function TestController($scope, $state, tests, $ionicPopup, _) {
+    function TestController($scope, $state, tests, $ionicPopup, _, Results) {
 
         $scope.test = angular.copy(tests[$state.params.id]);
         $scope.resulting = resulting;
@@ -24,6 +24,13 @@
                     console.log(index);
                     $scope.result++;
                 }
+            });
+
+
+            Results.add({
+                name: $scope.user,
+                test: $scope.test.name,
+                result: $scope.result
             });
 
             $ionicPopup.alert({
