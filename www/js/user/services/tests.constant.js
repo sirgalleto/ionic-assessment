@@ -6,7 +6,7 @@
             name: 'First Assessment',
             questions:[
                 {
-                    instruction: 'This is a instruction',
+                    instruction: 'Vocabulary & Grammar. Select the correct word to complete the sentence',
                     title:'This is my dog Ali. It ___ small ears and a black nose',
                     //imagen de un perro
                     image: 'test.png',
@@ -28,6 +28,7 @@
                 },
 
                 {
+                    instruction: 'Select the correct word to complete the sentence',
                     title:'The book is ___ the table',
                     //imagen de un libro sobre la mesa
                     answers: {
@@ -49,6 +50,7 @@
                 },
 
                 {
+                    instruction: 'Select the correct answer',
                     title:'Where is Betsy from?',
                     //bandera de colombia
                     answers: {
