@@ -2,10 +2,14 @@
     'use strict';
 
     angular
-    .module('CAssessment.user', [])
+    .module('CAssessment.user', ['LocalStorageModule'])
     .config(config);
 
-    function config($stateProvider) {
+    function config($stateProvider, localStorageServiceProvider) {
+
+
+        localStorageServiceProvider
+            .setPrefix('CAssessment');
 
         $stateProvider
             .state('home', {
