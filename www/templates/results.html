@@ -1,8 +1,11 @@
 <ion-view ion-title="Resultados">
     <ion-content>
         <ion-list>
-            <ion-item ng-repeat="result in results">
-
+            <ion-item ng-repeat="result in results" ng-click="showResult(result)">
+                <span>
+                    <h2>{{result.name}}</h2>
+                    <span>{{result.test}}</span>
+                </span>
             </ion-item>
         </ion-list>
     </ion-content>
