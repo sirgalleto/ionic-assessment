@@ -22,7 +22,6 @@
                 }
             });
 
-
             Results.add({
                 name: $scope.user,
                 test: $scope.test.name,
