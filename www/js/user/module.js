@@ -3,7 +3,8 @@
 
     angular
     .module('CAssessment.user', ['LocalStorageModule'])
-    .config(config);
+    .config(config)
+    .run(run);
 
     function config($stateProvider, localStorageServiceProvider) {
 
@@ -30,5 +31,11 @@
                 templateUrl: 'Templates/results.html',
                 cache: false
             });
+    }
+
+    function run($rootScope) {
+        $rootScope.getTimes = function(n){
+            return new Array(n);
+        };
     }
 })();
