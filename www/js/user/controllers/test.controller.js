@@ -30,7 +30,8 @@
             Results.add({
                 name: $scope.user,
                 test: $scope.test.name,
-                result: $scope.result
+                result: $scope.result,
+                total: $scope.total
             });
 
             $ionicPopup.alert({
