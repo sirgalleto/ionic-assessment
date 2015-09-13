@@ -23,6 +23,12 @@
                 controller: 'TestController',
                 templateUrl: 'templates/test.html',
                 cache: false
+            })
+            .state('results', {
+                url: 'results',
+                controller: 'ResultsController',
+                templateUrl: 'Templates/results.html',
+                cache: false
             });
     }
 })();
