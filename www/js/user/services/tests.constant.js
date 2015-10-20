@@ -9,7 +9,7 @@
                     instruction: 'Vocabulary & Grammar. Select the correct word to complete the sentence',
                     title:'This is my dog Ali. It ___ small ears and a black nose',
                     //imagen de un perro
-                    image: 'test.png',
+                    image: 'perro.jpg',
                     answers: {
                         a: {
                             description: 'am'
@@ -31,10 +31,10 @@
                     instruction: 'Select the correct word to complete the sentence',
                     title:'The book is ___ the table',
                     //imagen de un libro sobre la mesa
+                    image: 'book.jpg',
                     answers: {
                         a: {
-                            description: 'under',
-                            image: 'test.png'
+                            description: 'under'
                         },
                         b: {
                             description: 'on'
@@ -53,6 +53,7 @@
                     instruction: 'Select the correct answer',
                     title:'Where is Betsy from?',
                     //bandera de colombia
+                    image: 'colombia.jpeg',
                     answers: {
                         a: {
                             description: 'She is Spanish'
@@ -67,12 +68,13 @@
                             description: 'She is from Colombia'
                         }
                     },
-                    correct: 'a'
+                    correct: 'd'
                 },
 
                 {
-                    title: 'This person gelps people when they are very Sick, Who is it?',
+                    title: 'This person helps people when they are very Sick, Who is it?',
                     //Imagen de un hospital
+                    image: 'hospital.png',
                     answers:{
                         a: {
                             description: 'Teacher'
@@ -93,6 +95,7 @@
                 {
                     title: 'The person flies a Plane. Who is it?',
                     //Imagen de un avion
+                    image: 'avion.jpeg',
                     answers:{
                         a: {
                             description: 'Farmer'
@@ -111,6 +114,7 @@
                 },
                 {
                     title: 'How much does the backpack cost?',
+                    image: '45.png',
                     answers: {
                         a: {
                             description: 'niney six dollars'
@@ -131,6 +135,7 @@
                 {
                     title: 'Where is Mary?',
                     //Imagen de una niña en una habitación
+                    image: 'Mary.jpg',
                     answers:{
                         a: {
                             description: 'She is in the bathroom'
@@ -151,6 +156,7 @@
                 {
                     title:'Diane: What do you do in the morning?\nJoseph:_______',
                     //Imagen de ir al colegio
+                    image: 'gotoschool.jpg',
                     answers:{
                         a: {
                             description: 'At seven óclock'
@@ -167,10 +173,11 @@
                     },
                     correct: 'c'
                 },
-
+                /*
                 {
                     title:'Select the correct answer',
                     //Imagen de un niño tocando piano
+                    image: 'playpiano.jpg',
                     answers:{
                         a: {
                             description: 'He can play soccer and he can play the guitar'
@@ -187,23 +194,64 @@
                     },
                     correct: 'c'
                 },
-
+                */
                 {
                     title: 'Select the picture that shows. Cut the paper',
                     answers:{
                         a: {
-                            description: 'Imagen de alguien escribiendo'
+                            image: 'writing.jpg'
                         },
                         b: {
-                            description: 'Imagen de alguien coloreando'
+                            image: 'color.jpg'
                         },
                         c: {
-                            description: 'Imagen de alguien cortando papel'
+                            image: 'cuttingpaper.jpg'
                         },
                         d: {
-                            description: 'Imagen de alguien pintando'
+                            image: 'paiting.jpg'
                         }
-                    }
+                    },
+                    correct: 'c'
+                },
+
+                {
+                    title: 'Select the correct answer.',
+                    //Imagen señora comiendo galletas
+                    image: 'eatingcookies.jpeg',
+                    answers:{
+                        a: {
+                            description: 'She like cookies'
+                        },
+                        b: {
+                            description: 'She doesn\'t like cookies'
+                        },
+                        c: {
+                            description: 'She has lunch'
+                        },
+                        d:{
+                            description: 'She has dinner'
+                        }
+                    },
+                    correct: 'a'
+                },
+
+                {
+                    title: 'Pamela has blond hair.',
+                    answers:{
+                        a:{
+                            image: 'blackhair.jpeg'
+                        },
+                        b: {
+                            image: 'blondhair.jpg'
+                        },
+                        c: {
+                            image: 'canas.jpeg'
+                        },
+                        d: {
+                            image: 'redhair.jpg'
+                        }
+                    },
+                    correct: 'b'
                 }
             ]
         }
